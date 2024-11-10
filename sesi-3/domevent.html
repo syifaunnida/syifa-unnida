@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="uji_heading" onmouseover="sorot(this)">sorot dong!</h1>
+
+    <h2 id="uji_klik" onmousedown="tahan(this)" onmouseup="lepas(this)">
+      klik dong!
+    </h2>
+
+    <script>
+      function sorot(obj) {
+        obj.innerHTML = "sudah disorot";
+      }
+      function keluarsorot(obj) {
+        obj.innerHTML = "sudah lagi dong";
+      }
+      function tahan(obj) {
+        obj.innerHTML = "lepasin...";
+      }
+      function lepas(obj) {
+        obj.innerHTML = "klik lagi dong";
+      }
+      function klik() {
+        valueinput = document.getElementbyID("uji_input").value;
+        document.getElementByID("uji_span").innerHTML = valueinput;
+      }
+
+      <button onclick="ulangi()">ulangi</button>;
+
+      function ulangi() {
+        document.getElementById("uji_input").value = "";
+        document.getElementById("uji_span").innerHTML = "";
+        document.getElementById("uji_heading").innerHTML = "sorot lagi dong";
+        document.getElementById("uji_klik").innerHTML = "klik dong";
+      }
+
+      function klik() {
+        valueInput = document.getElementById("uji_input").value;
+        span = document.getElementById("uji_span");
+
+        if (valueInput == "") {
+          span.innerHTML = "Inputan kosong";
+          span.style = "color:red";
+        } else {
+          span.innerHTML = "Input: '" + valueInput + "'";
+          span.style = "color:blue";
+        }
+      }
+
+      function tiru() {
+        valueInput = document.getElementById("uji_input").value;
+        document.getElementById("uji_span").innerHTML = valueInput;
+      }
+    </script>
+  </body>
+</html>

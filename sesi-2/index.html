@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        color: darkred;
+        border: 2px solid red;
+      }
+
+      h1 {
+        color: darkred;
+      }
+
+      .teks-merah {
+        font-size: 20px;
+        text-align: center;
+        background-color: whitesmoke;
+        color: darkgrey;
+        border: 2px solid black;
+      }
+
+      #teks-kuning {
+        font-size: 20px;
+        text-align: center;
+        background-color: whitesmoke;
+        color: blue;
+        border: 2px solid black;
+      }
+      .subbagian {
+        font-size: 30px;
+      }
+
+      .subbagian.header {
+        color: blueviolet;
+      }
+
+      .subbagian#teks {
+        color: brown;
+      }
+
+      p:hover {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>pemrograman web 1</h1>
+    <p class="teks-merah">
+      praktik pemrograman web 1 sesi 2 akan membahas tenrtang penggunaan css
+    </p>
+    <p id="teks-kuning">
+      css atau cascading style sheets adalah sebuah bahasa yang digunakan untuk
+      mengatur tampilan halaman web
+    </p>
+    <div>
+      <p>ini adalah paragraf pertama</p>
+      <div>
+        <p>ini adalah paragraf kedua</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="subbagian header">Bagian header</div>
+      <p class="subbagian" id="teks">Ini adalah paragraf</p>
+    </div>
+  </body>
+</html>

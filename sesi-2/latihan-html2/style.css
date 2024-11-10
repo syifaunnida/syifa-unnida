@@ -1,0 +1,44 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.profile-img {
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 60%;
+  width: 150px;
+  height: 150px;
+}
+.info {
+  margin-bottom: 20px;
+}
+
+.info label {
+  font-weight: bold;
+}
+
+.container {
+  background-color: burlywood; /* Mengubah warna latar belakang kontainer */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .info p {
+  text-align: justify;
+}
